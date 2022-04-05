@@ -42,7 +42,7 @@ file_put_contents('./.env', 'APP_TRUSTED_PROXIES=10.0.0.0/8' . PHP_EOL, FILE_APP
 file_put_contents('./.env', 'IMAGE_LIB=gd' . PHP_EOL, FILE_APPEND); 
 
 // Set local FILESYSTEM_DISK and PUBLIC_FILESYSTEM_DISK
-file_put_contents('./.env', 'FILESYSTEM_DISK=local' . PHP_EOL, FILE_APPEND); 
+file_put_contents('./.env', 'FILESYSTEM_DISK=s3' . PHP_EOL, FILE_APPEND); 
 file_put_contents('./.env', 'PUBLIC_FILESYSTEM_DISK=s3_public' . PHP_EOL, FILE_APPEND);
 
 // Set APP_CIPHER
