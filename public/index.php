@@ -60,7 +60,4 @@ $response = $kernel->handle(
 
 $response->send();
 
-error_log( print_r( $request, true ) );
-error_log( print_r( $response, true ) );
-
 $kernel->terminate($request, $response);
