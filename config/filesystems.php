@@ -58,11 +58,11 @@ $config = [
 
         's3_public' => [
             'driver' => 's3',
-            'key' => env('PUBLIC_AWS_ACCESS_KEY_ID'),
+            'key' => 'AKIAYTO3I6KH64MJQRU2',
             'secret' => env('PUBLIC_AWS_SECRET_ACCESS_KEY'),
-            'region' => env('PUBLIC_AWS_DEFAULT_REGION'),
+            'region' => 'us-east-1',
             'bucket' => env('PUBLIC_AWS_BUCKET'),
-            'url' => env('PUBLIC_AWS_URL'),
+            'url' => 'https://snipe-it-uploads.s3.amazonaws.com',
             'root'   => env('PUBLIC_AWS_BUCKET_ROOT'),
             'visibility' => 'public'
         ],
@@ -73,11 +73,11 @@ $config = [
             // For security reasons, its best to use separate buckets for
             // public and private documents in S3
             'driver' => 's3',
-            'key' => env('PRIVATE_AWS_ACCESS_KEY_ID'),
+            'key' => 'AKIAYTO3I6KH64MJQRU2',
             'secret' => env('PRIVATE_AWS_SECRET_ACCESS_KEY'),
-            'region' => env('PRIVATE_AWS_DEFAULT_REGION'),
+            'region' =>'us-east-1',
             'bucket' => env('PRIVATE_AWS_BUCKET'),
-            'url' => env('PRIVATE_AWS_URL'),
+            'url' => 'https://snipe-it-uploads.s3.amazonaws.com',
             'root'   => env('PRIVATE_AWS_BUCKET_ROOT'),
             'visibility' => 'private'
         ],
